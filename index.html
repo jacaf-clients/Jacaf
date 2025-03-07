@@ -1,8 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,6 +25,62 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Beam - Free Bootstrap Template</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.location.hash === '#form-response') {
+                showAlert();
+            }
+        });
+
+        function showAlert() {
+            const alertBox = document.getElementById('custom-alert');
+            alertBox.style.display = 'block';
+        }
+
+        function closeAlert() {
+            const alertBox = document.getElementById('custom-alert');
+            alertBox.style.display = 'none';
+            window.location.href = window.location.origin + window.location.pathname;
+        }
+    </script>
+
+    <style>
+        .alert-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            color: #155724;
+            max-width: 80%;
+        }
+
+        .alert-content {
+            position: relative;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .alert-close {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #155724;
+        }
+
+        .alert-box p {
+            margin: 0;
+            color: #155724;
+        }
+    </style>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
@@ -74,10 +129,10 @@ HEADER
         <div class="container">
             <!-- // Brand // -->
 
-            <a class="navbar-brand" href="#">B<span>ea</span>M</a>
+            <a class="navbar-brand" href="#">JACAF</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i
-                    class="material-icons">menu</i></button>
+                    class="material-icons">Menu</i></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- / NavLinks / -->
 
@@ -100,9 +155,6 @@ HEADER
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
                     </li>
-                    <li>
-                        <button class="btn btn-primary">Sign In</button>
-                    </li>
                 </ul>
 
             </div>
@@ -116,9 +168,9 @@ HEADER
                 <div class="col-md-8 offset-md-2">
                     <!-- // Caption // -->
                     <div class="caption">
-                        <h1>Make Business Easy With Beam.</h1>
-                        <p class="sub">Short text goes here.</p>
-                        <a class="btn btn-primary" href="#">Download Now</a>
+                        <h1>Grow Your Business with JACAF</h1>
+                        <p class="sub">Boost customer engagement and streamline operations with our AI-powered
+                            chatbot - enhancing support, automating tasks, and driving business growth effortlessly!</p>
                         <!-- / Macbook IMG / -->
                         <img class="img-fluid mx-auto wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"
                              src="imgs/macbook.png" alt="macbook">
@@ -141,20 +193,18 @@ ABOUT
                 <i data-vi="layers" data-vi-size="70" data-vi-primary="#1992ec" data-vi-accent="#daeffd"
                    data-vi-prop="#CEFAFF"></i>
                 <!-- // Title // -->
-                <h4>Creative Design</h4>
+                <h4>Intelligent Chats</h4>
                 <!-- / Caption / -->
-                <p>Unlike team chat apps, Beam is designed to help your team stay focused by keeping relevant and
-                    actionable.</p>
+                <p>Our chatbot enhances productivity by keeping interactions relevant, actionable, and efficient.</p>
             </div>
             <div class="col-md-4 wow bounceIn" data-wow-duration=".5s" data-wow-delay=".4s">
                 <!-- /// Icon /// -->
                 <i data-vi="website" data-vi-size="70" data-vi-primary="#1992ec" data-vi-accent="#daeffd"
                    data-vi-prop="#CEFAFF"></i>
                 <!-- // Title // -->
-                <h4>Fully Responsive</h4>
+                <h4>Smart & Responsive</h4>
                 <!-- / Caption / -->
-                <p>Unlike team chat apps, Beam is designed to help your team stay focused by keeping relevant and
-                    actionable.</p>
+                <p>Our chatbot enhances engagement and streamlines conversations for better business growth.</p>
             </div>
             <div class="col-md-4 wow bounceIn" data-wow-duration=".5s" data-wow-delay=".6s">
                 <!-- /// Icon /// -->
@@ -163,8 +213,7 @@ ABOUT
                 <!-- // Title // -->
                 <h4>Unlimited Support</h4>
                 <!-- / Caption / -->
-                <p>Unlike team chat apps, Beam is designed to help your team stay focused by keeping relevant and
-                    actionable.</p>
+                <p>Designed to keep your team productive with relevant and actionable interactions.</p>
             </div>
         </div>
     </div>
@@ -179,15 +228,14 @@ SERVICES
         <div class="row">
             <div class="col-md-5 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".2s">
                 <h3>Powerful services for Powerful applications.</h3>
-                <p>Responsive code that makes your landing page look good on all devices (desktops, tablets, and
-                    phones). Created with mobile specialists.</p>
+                <p>Built for seamless performance across all devices, crafted by mobile experts.</p>
                 <ul class="list-unstyled">
                     <li><i data-vi="check" data-vi-size="40" data-vi-primary="#1992ec" data-vi-accent="#daeffd"
-                           data-vi-prop="#CEFAFF"></i> <span>Responsive code.</span></li>
+                           data-vi-prop="#CEFAFF"></i> <span>Responsive code for a flawless experience</span></li>
                     <li><i data-vi="check" data-vi-size="40" data-vi-primary="#1992ec" data-vi-accent="#daeffd"
-                           data-vi-prop="#CEFAFF"></i> <span>Looks good on all devices.</span></li>
+                           data-vi-prop="#CEFAFF"></i> <span>Optimized for all devices</span></li>
                     <li><i data-vi="check" data-vi-size="40" data-vi-primary="#1992ec" data-vi-accent="#daeffd"
-                           data-vi-prop="#CEFAFF"></i> <span>Created with mobile specialists.</span></li>
+                           data-vi-prop="#CEFAFF"></i> <span>Developed by mobile specialists</span></li>
                 </ul>
             </div>
             <div class="col-md-7 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".5s">
@@ -202,11 +250,12 @@ SERVICES
             </div>
             <div class="col-md-5 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".5s">
                 <div class="caption">
-                    <h3>Easily balance workloads and manage resources.</h3>
-                    <p>Responsive code that makes your landing page look good on all devices (desktops, tablets, and
-                        phones). Created with mobile specialists.</p>
-                    <p>Plan ahead by day, week, or month, and see project status at a glance</p>
-                    <button class="btn btn-secondary" type="button">Learn More</button>
+                    <h3>Enhance Customer Engagement with Smart Automation</h3>
+                    <p>Seamlessly handle inquiries and optimize responses with AI-powered chatbots.</p>
+                    <p>Instant support to improve customer satisfaction.</p>
+                    <p>Automated responses for efficient query handling.</p>
+                    <p>Seamless integration with your business workflow.</p>
+                    <!--<button class="btn btn-secondary" type="button">Learn More</button>-->
                 </div>
             </div>
         </div>
@@ -223,9 +272,8 @@ FEATURES
         <!-- /// Title /// -->
         <div class="row">
             <div class="col-md-6 col-sm-offset-2 text-center mx-auto">
-                <h2 class="section-title">Features designed for you:</h2>
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born.</p>
+                <h2 class="section-title">Features designed for you</h2>
+                <p>Enhance customer engagement, automate tasks, and boost efficiency with AI-driven chatbots.</p>
             </div>
         </div>
         <!-- /// Features /// -->
@@ -235,107 +283,58 @@ FEATURES
                     <i data-vi="processor" data-vi-primary="#cfecff" data-vi-accent="#60b6f4"
                        data-vi-prop="#CEFAFF"></i>
                 </div>
-                <h4>UI/UX Design</h4>
-                <p>The European languages are members of the same family separate existence.</p>
+                <h4>Conversational AI</h4>
+                <p>Enhance user experience with intuitive chatbot interactions.</p>
             </div>
             <div class="col-md-4 feature wow bounceIn" data-wow-duration=".5s" data-wow-delay=".4s">
                 <div class="feature-icon">
                     <i data-vi="newspaper" data-vi-primary="#60b6f4" data-vi-accent="#cfecff"
                        data-vi-prop="#CEFAFF"></i>
                 </div>
-                <h4>Branding</h4>
-                <p>The European languages are members of the same family separate existence.</p>
+                <h4>Business Automation</h4>
+                <p>Streamline workflows and reduce manual effort with AI-driven responses.</p>
             </div>
             <div class="col-md-4 feature wow bounceIn" data-wow-duration=".5s" data-wow-delay=".6s">
                 <div class="feature-icon">
                     <i data-vi="controller" data-vi-primary="#60b6f4" data-vi-accent="#cfecff"
                        data-vi-prop="#CEFAFF"></i>
                 </div>
-                <h4>Easy To Use</h4>
-                <p>The European languages are members of the same family separate existence.</p>
+                <h4>Easy Integration</h4>
+                <p>Seamlessly connect with your existing platforms and tools.</p>
             </div>
             <div class="col-md-4 feature wow bounceIn" data-wow-duration=".5s" data-wow-delay=".8s">
                 <div class="feature-icon">
                     <i data-vi="doc" data-vi-primary="#60b6f4" data-vi-accent="#cfecff" data-vi-prop="#CEFAFF"></i>
                 </div>
-                <h4>Pre-Planning</h4>
-                <p>The European languages are members of the same family separate existence.</p>
+                <h4>Smart Assistance</h4>
+                <p>Provide instant support and personalized recommendations.</p>
             </div>
             <div class="col-md-4 feature wow bounceIn" data-wow-duration=".5s" data-wow-delay="1s">
                 <div class="feature-icon">
                     <i data-vi="user" data-vi-primary="#cfecff" data-vi-accent="#60b6f4" data-vi-prop="#CEFAFF"></i>
                 </div>
-                <h4>User Friendly</h4>
-                <p>The European languages are members of the same family separate existence.</p>
+                <h4>User-Friendly Interface</h4>
+                <p>Designed for effortless interaction and smooth navigation.</p>
             </div>
             <div class="col-md-4 feature wow bounceIn" data-wow-duration=".5s" data-wow-delay="1.2s">
                 <div class="feature-icon">
                     <i data-vi="cloud" data-vi-primary="#60b6f4" data-vi-accent="#60b6f4" data-vi-prop="#CEFAFF"></i>
                 </div>
-                <h4>Cloud Service</h4>
-                <p>The European languages are members of the same family separate existence.</p>
+                <h4>Cloud-Powered</h4>
+                <p>Scalable, secure, and always accessible AI chatbot solutions.</p>
             </div>
         </div>
     </div>
 </section>
-
-<!-- ==============================================
-TESTIMONIALS
-=============================================== -->
-
-<section id="testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-offset-2 carousel-container">
-                <div id="owl-testimonials" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="testimonial-icon">
-                            <i data-vi="bullhorn" data-vi-primary="#cfecff" data-vi-accent="#60b6f4"
-                               data-vi-prop="#CEFAFF"></i>
-                        </div>
-                        <p class="quote">" Testimonial goes here. "</p>
-                        <img src="imgs/1.png" class="img-fluid" alt="1">
-                        <h4>John Doe</h4>
-                        <span>CEO Founder</span>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-icon">
-                            <i data-vi="bullhorn" data-vi-primary="#cfecff" data-vi-accent="#60b6f4"
-                               data-vi-prop="#CEFAFF"></i>
-                        </div>
-                        <p class="quote">" Testimonial goes here. "</p>
-                        <img src="imgs/2.png" class="img-fluid" alt="2">
-                        <h4>Nadine</h4>
-                        <span>Project Manager</span>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-icon">
-                            <i data-vi="bullhorn" data-vi-primary="#cfecff" data-vi-accent="#60b6f4"
-                               data-vi-prop="#CEFAFF"></i>
-                        </div>
-                        <p class="quote">" Testimonial goes here. "</p>
-                        <img src="imgs/3.png" class="img-fluid" alt="3">
-                        <h4>James Doe</h4>
-                        <span>CEO Founder</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ==============================================
-PRICING
-=============================================== -->
 
 <section id="prices">
     <div class="container">
         <div class="row">
             <!-- /// Title /// -->
             <div class="col-md-6 col-sm-offset-2 col-md-offset-3 text-center mx-auto">
-                <h2 class="section-title">Our Plans And Pricing:</h2>
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born.</p>
+                <h2 class="section-title">Our Plans And Pricing</h2>
+                <p>Flexible and affordable plans tailored to meet your business needs. The prices are samples excluding
+                    GST and the original price will vary depending on the requirements.</p>
             </div>
         </div>
         <!-- /// Pricing Tables /// -->
@@ -345,17 +344,16 @@ PRICING
                 <div class="price-table">
                     <div class="header">
                         <h5 class="title">Basic</h5>
-                        <div class="price">0$</div>
-                        <h4>Free</h4>
+                        <div class="price">Rs. 25K</div>
+                        <h4>One time charge</h4>
                     </div>
                     <ul>
-                        <li>WordPress Theme</li>
-                        <li>50GB Disk Space</li>
-                        <li>50 Email Accounts</li>
-                        <li>High Speed Internet</li>
-                        <li>Free Theme Installation</li>
+                        <li>Basic chatbot functionality</li>
+                        <li>Up to 5 pre-defined conversation flows</li>
+                        <li>Standard response time</li>
+                        <li>Basic reporting</li>
+                        <li>Cost per WhatsApp conversation Rs. 1.00</li>
                     </ul>
-                    <button class="btn btn-transparent" type="button">Sign Up</button>
                 </div>
             </div>
             <!--// First Table // -->
@@ -363,35 +361,33 @@ PRICING
                 <div class="price-table">
                     <div class="header">
                         <h5 class="title">Pro</h5>
-                        <div class="price">10$</div>
-                        <h4>Per Month</h4>
+                        <div class="price">Rs. 40K</div>
+                        <h4>One time charge</h4>
                     </div>
                     <ul>
-                        <li>WordPress Theme</li>
-                        <li>50GB Disk Space</li>
-                        <li>50 Email Accounts</li>
-                        <li>High Speed Internet</li>
-                        <li>Free Theme Installation</li>
+                        <li>Enhanced chatbot functionality</li>
+                        <li>Up to 10 customizable conversation flows</li>
+                        <li>Faster response time</li>
+                        <li>Advanced reporting</li>
+                        <li>Cost per WhatsApp conversation Rs. 0.85</li>
                     </ul>
-                    <button class="btn btn-primary" type="button">Sign Up</button>
                 </div>
             </div>
             <!--// First Table // -->
             <div class="col-lg-4 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
                 <div class="price-table">
                     <div class="header">
-                        <h5 class="title">Ultimate Plan</h5>
-                        <div class="price">50$</div>
-                        <h4>Per Year</h4>
+                        <h5 class="title">Premium</h5>
+                        <div class="price">Rs. 60K</div>
+                        <h4>One time charge</h4>
                     </div>
                     <ul>
-                        <li>WordPress Theme</li>
-                        <li>50GB Disk Space</li>
-                        <li>50 Email Accounts</li>
-                        <li>High Speed Internet</li>
-                        <li>Free Theme Installation</li>
+                        <li>Featured chatbot functionality</li>
+                        <li>Unlimited customizable conversation flows</li>
+                        <li>Priority response time</li>
+                        <li>Comprehensive reporting</li>
+                        <li>Cost per WhatsApp conversation Rs. 0.70</li>
                     </ul>
-                    <button class="btn btn-transparent" type="button">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -408,9 +404,8 @@ APP SCREENSHOTS
         <div class="row">
             <div class="col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
                 <!-- /// Title /// -->
-                <h2 class="section-title">App Screenshots:</h2>
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born.</p>
+                <h2 class="section-title">Chatbot Screenshots</h2>
+                <p>Get a glimpse of our intuitive and user-friendly chatbot interface in action.</p>
             </div>
         </div>
         <div class="row">
@@ -428,51 +423,23 @@ APP SCREENSHOTS
     </div>
 </section>
 
-<!-- ==============================================
-VIDEO POP UP
-=============================================== -->
-
-<div id="video-popup">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 video-box">
-                <img src="imgs/video-bg.png" class="img-fluid wow rotateIn" data-wow-duration=".5s" data-wow-delay=".2s"
-                     alt="popup">
-                <div class="play-button">
-                    <a class="bla-2 wow flipInY" data-wow-duration=".5s" data-wow-delay=".4s"
-                       href="https://www.youtube.com/watch?v=3qyhgV0Zew0"><i class="material-icons">play_arrow</i></a>
-                    <div class="waves-block">
-                        <div class="waves wave-1"></div>
-                        <div class="waves wave-2"></div>
-                        <div class="waves wave-3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ==============================================
-TEAM
-=============================================== -->
-
 <section id="team">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
                 <!-- /// Title /// -->
-                <h2 class="section-title">Our Team Of Experts:</h2>
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born.</p>
+                <h2 class="section-title">Our Team Of Experts</h2>
+                <p>A dedicated team of AI specialists and developers, committed to delivering smart and efficient
+                    chatbot solutions.</p>
             </div>
         </div>
         <div class="row">
             <!-- /// TEAM MEMBERS /// -->
-            <div class="col-md-4 member wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".2s">
+            <div class="col-md-6 member wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".2s">
                 <div class="member-img">
                     <img src="imgs/team/team1.png" class="img-fluid" alt="team-1">
                 </div>
-                <h4>Jason Brody</h4>
+                <h4>Gokul Krishnan</h4>
                 <p>CEO Founder</p>
                 <ul class="social-media">
                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -481,25 +448,12 @@ TEAM
                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
-            <div class="col-md-4 member wow bounceIn" data-wow-duration=".5s" data-wow-delay=".4s">
+            <div class="col-md-6 member wow bounceIn" data-wow-duration=".5s" data-wow-delay=".4s">
                 <div class="member-img">
                     <img src="imgs/team/team-2.png" class="img-fluid" alt="team-2">
                 </div>
-                <h4>Myra Johns</h4>
-                <p>web designer</p>
-                <ul class="social-media">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 member wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
-                <div class="member-img">
-                    <img src="imgs/team/team-3.png" class="img-fluid" alt="team-3">
-                </div>
-                <h4>Mike Smith</h4>
-                <p>web developer</p>
+                <h4>Sujitha</h4>
+                <p>AI Specialist</p>
                 <ul class="social-media">
                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -520,19 +474,34 @@ BRAND
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
                 <!-- /// Title /// -->
-                <h2 class="section-title">We Are Trusted By:</h2>
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born.</p>
+                <h2 class="section-title">We Are Trusted By</h2>
+                <p>Businesses worldwide rely on our chatbot solutions for seamless customer interactions and
+                    automation.</p>
             </div>
         </div>
         <div class="row">
             <div id="owl-brands">
-                <div class="item"><img src="imgs/brands/brand-1.png" class="img-fluid" alt="brand-1"></div>
-                <div class="item"><img src="imgs/brands/brand-2.png" class="img-fluid" alt="brand-1"></div>
-                <div class="item"><img src="imgs/brands/brand-3.png" class="img-fluid" alt="brand-3"></div>
-                <div class="item"><img src="imgs/brands/brand-1.png" class="img-fluid" alt="brand-1"></div>
-                <div class="item"><img src="imgs/brands/brand-2.png" class="img-fluid" alt="brand-2"></div>
-                <div class="item"><img src="imgs/brands/brand-3.png" class="img-fluid" alt="brand-3"></div>
+                <div class="item"><a href="https://seekinghobbies.co.za/" target="_blank"><img
+                        src="imgs/brands/brand-1.png" class="img-fluid" alt="brand-1">
+                    <p style="margin-top: 5px; font-size: 14px; color: #333;">Seeking Hobbies</p></a></div>
+                <div class="item"><a href="https://ec1.co.za/" target="_blank"><img
+                        src="imgs/brands/brand-2.png" class="img-fluid" alt="brand-2">
+                    <p style="margin-top: 5px; font-size: 14px; color: #333;">Electronic Connect</p></a></div>
+                <div class="item"><a href="https://www.jaisuntourism.com/" target="_blank"><img
+                        src="imgs/brands/brand-3.png" class="img-fluid" alt="brand-3">
+                    <p style="margin-top: 5px; font-size: 14px; color: #333;">Jai Sun Tourism</p></a></div>
+                <div class="item"><a href="https://clubofgujarati.africa/" target="_blank"><img
+                        src="imgs/brands/brand-4.png" class="img-fluid" alt="brand-4">
+                    <p style="margin-top: 5px; font-size: 14px; color: #333;">Club of Gujarati</p></a></div>
+                <div class="item"><img
+                        src="imgs/brands/brand-5.png" class="img-fluid" alt="brand-5">
+                    <p style="margin-top: 5px; font-size: 14px; color: #333;">Insat Electronics</p></div>
+                <div class="item"><a href="https://www.emperortraveline.com/" target="_blank"><img
+                        src="imgs/brands/brand-6.png" class="img-fluid" alt="brand-6">
+                    <p style="margin-top: 5px; font-size: 14px; color: #333;">Emperor Traveline</p></a></div>
+                <div class="item"><a href="https://www.samcateringservices.com/" target="_blank"><img
+                        src="imgs/brands/brand-7.png" class="img-fluid" alt="brand-7">
+                    <p style="margin-top: 5px; font-size: 14px; color: #333;">SAM Catering Services</p></a></div>
             </div>
         </div>
     </div>
@@ -547,41 +516,62 @@ FOOTER
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center title-container">
                 <!-- /// Title /// -->
-                <h2 class="section-title">Don't Be Shy Send a Message:</h2>
-                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                    born.</p>
+                <h2 class="section-title">Don't Be Shy Send a Message</h2>
+                <p>Have questions? Reach out, and let’s chat about how our chatbot can help your business!</p>
             </div>
         </div>
 
         <!-- /// CONTACT FORMS /// -->
 
-        <form>
+        <div id="custom-alert" class="alert-box" style="display: none;">
+            <div class="alert-content">
+                <span class="alert-close" onclick="closeAlert()">&times;</span>
+                <p>Thank you for reaching out to us. We have successfully received your request and will carefully
+                    review it. Our team will get back to you as soon as possible. Your patience is greatly
+                    appreciated.</p>
+            </div>
+        </div>
+
+        <form id="contact-us-form" action="https://formspree.io/f/xvgkpblz" method="POST">
             <div class="form-row">
                 <div class="form-group col-xs-12 col-sm-4">
-                    <label>Name:</label>
-                    <label for="inputName4"></label><input type="text" class="form-control" id="inputName4">
+                    <label for="inputName4">Name:</label>
+                    <input type="text" class="form-control" id="inputName4" name="name" required>
                 </div>
                 <div class="form-group col-xs-12 col-sm-4">
-                    <label for="inputPassword4">Email:</label>
-                    <input type="email" class="form-control" id="inputPassword4">
+                    <label for="inputEmail4">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail4" name="email" required>
                 </div>
                 <div class="form-group col-xs-12 col-sm-4">
-                    <label>Phone:</label>
-                    <label for="inputPhone"></label><input type="text" class="form-control" id="inputPhone">
+                    <label for="inputPhone">Phone:</label>
+                    <input type="text" class="form-control" id="inputPhone" name="phone">
                 </div>
             </div>
             <div class="form-group">
-                <label>Subject:</label>
-                <label for="inputSubject"></label><input type="text" class="form-control" id="inputSubject">
+                <label for="inputSubject">Subject:</label>
+                <input type="text" class="form-control" id="inputSubject" name="subject">
             </div>
             <div class="form-group">
-                <label>Message:</label>
-                <label for="form-message"></label><textarea id="form-message" cols="30" rows="5"
-                                                            class="form-control"></textarea>
+                <label for="form-message">Message:</label>
+                <textarea id="form-message" cols="30" rows="5" class="form-control" name="message" required></textarea>
             </div>
+            <input type="text" name="_gotcha" style="display:none">
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
-        <p>&copy; Beam All Right Reserved 2018. Made By Badr</p>
+
+        <form>
+            <!-- Contact Information Section -->
+            <div class="contact-info">
+                <h2 class="section-title"></h2>
+                <p><strong>Mobile Number:</strong> <a href="tel:+919042076428" style="color: white;">+91-90420-76428</a>
+                </p>
+                <p><strong>Email:</strong> <a href="mailto:jacafinfotech@gmail.com" style="color: white;">jacafinfotech@gmail.com</a>
+                </p>
+                <p><strong>Address:</strong> Periyanaickenpalayam, Coimbatore - 641020, Tamil Nadu, India</p>
+            </div>
+        </form>
+
+        <p><b>&copy; JACAF INFOTECH PRIVATE LIMITED</b> <br>All Right Reserved 2025.</p>
     </div>
 </section>
 
